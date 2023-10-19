@@ -1,8 +1,8 @@
 {
-    "name": "frontend-development-enviroment",
+    "name": "netmatters-homepage-clone",
     "private": true,
     "version": "0.0.0",
-    "description": "A frontend dev environment for easy setting up of new projects",
+    "description": "A clone of the netmatters homepage",
     "type": "module",
     "scripts": {
         "dev": "vite",
