@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.header {
+    $spacing: toRem(20);
+
+    margin: 0 auto;
+    padding: $spacing 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: toRem(20);
+
+    &__logo {
+        @include mq(lg) {
+            max-width: 370px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $spacing;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: end;
+        gap: $spacing;
+
+        flex: 1;
+    }
+}

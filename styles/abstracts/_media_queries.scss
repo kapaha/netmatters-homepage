@@ -1,0 +1,26 @@
+// Breakpoints
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1260px;
+
+$breakpoints: (
+    'md': $breakpoint-md,
+    'lg': $breakpoint-lg,
+    'xl': $breakpoint-xl,
+);
+
+// Media queries
+@mixin mq($breakpoint: null) {
+    $breakpoint-value: map-get(
+        $map: $breakpoints,
+        $key: $breakpoint,
+    );
+
+    @if $breakpoint-value == null {
+        @error 'Please specify a valid breakpoint. Valid breakpoints: #{map-keys($breakpoints)}';
+    }
+
+    @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+}

@@ -3,11 +3,77 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/4323c15833.js"
+            crossorigin="anonymous"
+        ></script>
         <title>
             Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters
         </title>
     </head>
     <body>
+        <header class="header container">
+            <div class="header__top">
+                <a href="#">
+                    <img
+                        class="header__logo"
+                        src="/f-logo.webp"
+                        alt="Netmatters"
+                    />
+                </a>
+
+                <div class="header__actions">
+                    <button class="btn-support">
+                        <i class="fa-solid fa-computer-mouse"></i>
+                        Support
+                    </button>
+
+                    <button class="btn-contact">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        Contact
+                    </button>
+
+                    <a class="btn-phone" href="#">
+                        <i class="fa-solid fa-phone-volume fa-fw fa-2x"></i>
+                    </a>
+
+                    <form class="search-form-desktop">
+                        <label for="search" class="sr-only">Search:</label>
+
+                        <input
+                            id="search"
+                            type="text"
+                            placeholder="Search..."
+                        />
+
+                        <button class="btn-search-desktop" type="button">
+                            <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+                        </button>
+                    </form>
+
+                    <button class="btn-hamburger">
+                        <i class="fa-solid fa-bars fa-fw fa-2x"></i>
+                    </button>
+                </div>
+            </div>
+
+            <form class="search-form-mobile">
+                <label for="search" class="sr-only">Search:</label>
+
+                <input id="search" type="text" placeholder="Search..." />
+
+                <button class="btn-search-mobile" type="button">
+                    <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+                </button>
+            </form>
+        </header>
+
         <script type="module" src="/main.js"></script>
     </body>
 </html>

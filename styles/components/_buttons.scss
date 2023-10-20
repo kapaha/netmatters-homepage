@@ -1,0 +1,104 @@
+@use '../abstracts' as *;
+
+%btn-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    border-radius: 3px;
+
+    color: $slate-800;
+
+    cursor: pointer;
+}
+
+%btn-square {
+    @extend %btn-base;
+
+    padding: 0.75rem;
+}
+
+%btn-cta {
+    @extend %btn-base;
+
+    color: $white;
+
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.btn {
+    @extend %btn-base;
+}
+
+.btn-phone {
+    @extend %btn-square;
+
+    &:hover {
+        color: $slate-900;
+    }
+
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.btn-hamburger {
+    @extend %btn-square;
+
+    background-color: $slate-800;
+    color: white;
+
+    &:hover {
+        background-color: $slate-900;
+    }
+}
+
+.btn-search-mobile {
+    @extend %btn-square;
+    border-radius: 0;
+}
+
+.btn-search-desktop {
+    @extend %btn-square;
+
+    width: 55px;
+    flex-shrink: 0;
+
+    background-color: $gray-400;
+    color: white;
+    border-radius: 0;
+
+    &:hover {
+        background-color: $gray-500;
+    }
+}
+
+.btn-support,
+.btn-contact {
+    @extend %btn-cta;
+
+    display: none;
+
+    @include mq(lg) {
+        display: flex;
+    }
+}
+
+.btn-support {
+    background-color: $blue-400;
+
+    &:hover {
+        background-color: $blue-500;
+    }
+}
+
+.btn-contact {
+    background-color: $gray-400;
+
+    &:hover {
+        background-color: $gray-500;
+    }
+}
