@@ -48,6 +48,8 @@
 .btn-hamburger {
     @extend %btn-square;
 
+    align-self: center;
+
     background-color: $slate-800;
     color: white;
 

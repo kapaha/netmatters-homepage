@@ -26,8 +26,13 @@
     &__actions {
         display: flex;
         justify-content: end;
+        align-items: stretch;
         gap: $spacing;
 
         flex: 1;
+    }
+
+    .icon-phone_in_talk {
+        font-size: 32px;
     }
 }

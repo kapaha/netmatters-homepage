@@ -7,6 +7,7 @@
 
     input {
         min-height: 47px;
+        height: 100%;
         padding: 5px 15px;
 
         border: none;
@@ -37,6 +38,10 @@
     display: none;
     border: 1px solid $dark-gray-200;
 
+    @include mq(md) {
+        display: flex;
+    }
+
     input {
         color: $dark-gray-700;
 
@@ -45,15 +50,13 @@
         }
     }
 
-    @include mq(md) {
-        display: flex;
-    }
+    &__input {
+        @include mq(lg) {
+            display: none;
+        }
 
-    @include mq(lg) {
-        display: none;
-    }
-
-    @include mq(xl) {
-        display: flex;
+        @include mq(xl) {
+            display: block;
+        }
     }
 }
