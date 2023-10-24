@@ -1,15 +1,13 @@
 @use '../abstracts' as *;
 
 %btn-base {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 
     padding: 0.5rem 1rem;
     gap: 0.5rem;
     border-radius: 3px;
-
-    color: $slate-800;
 
     cursor: pointer;
 }
@@ -35,6 +33,8 @@
 
 .btn-phone {
     @extend %btn-square;
+
+    color: $slate-800;
 
     &:hover {
         color: $slate-900;
