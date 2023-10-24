@@ -14,3 +14,28 @@ $slate-900: hsl(230, 15%, 16%);
 
 $blue-400: hsl(214, 65%, 55%);
 $blue-500: hsl(214, 65%, 47%);
+
+$silver-400: hsl(213, 23%, 51%);
+$silver-500: hsl(213, 23%, 42%);
+
+$green-400: hsl(145, 63%, 49%);
+$green-500: hsl(146, 64%, 39%);
+
+$red-400: hsl(2, 65%, 55%);
+$red-500: hsl(2, 65%, 45%);
+
+$purple-400: hsl(272, 29%, 56%);
+$purple-500: hsl(272, 30%, 47%);
+
+$pink-400: hsl(345, 91%, 55%);
+$pink-500: hsl(345, 92%, 45%);
+
+$orange-400: hsl(10, 69%, 48%);
+$orange-500: hsl(10, 70%, 38%);
+
+// Color lists
+$nav-colors: $silver-400, $blue-400, $green-400, $red-400, $purple-400,
+    $pink-400, $orange-400;
+
+$nav-sub-menu-colors: $silver-500, $blue-500, $green-500, $red-500, $purple-500,
+    $pink-500, $orange-500;

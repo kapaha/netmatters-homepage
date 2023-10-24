@@ -1,0 +1,155 @@
+$icomoon-font-family: 'icomoon' !default;
+$icomoon-font-path: '/fonts' !default;
+
+$icon-arrow-right1: '\e908';
+$icon-apps: '\e918';
+$icon-mouse: '\e901';
+$icon-security: '\e902';
+$icon-check: '\e903';
+$icon-phone_in_talk: '\e904';
+$icon-school: '\e905';
+$icon-search: '\f002';
+$icon-twitter: '\f099';
+$icon-facebook: '\f09a';
+$icon-facebook-f: '\f09a';
+$icon-bars: '\f0c9';
+$icon-navicon: '\f0c9';
+$icon-reorder: '\f0c9';
+$icon-linkedin: '\f0e1';
+$icon-code: '\f121';
+$icon-instagram: '\f16d';
+$icon-bar-graph: '\e906';
+$icon-paperplane: '\e907';
+$icon-display: '\e956';
+
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?eyemrl')
+            format('truetype'),
+        url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?eyemrl')
+            format('woff'),
+        url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?eyemrl##{$icomoon-font-family}')
+            format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$icomoon-font-family}' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-size: 1.438rem;
+}
+
+.icon-arrow-right1 {
+    &:before {
+        content: $icon-arrow-right1;
+    }
+}
+.icon-apps {
+    &:before {
+        content: $icon-apps;
+    }
+}
+.icon-mouse {
+    &:before {
+        content: $icon-mouse;
+    }
+}
+.icon-security {
+    &:before {
+        content: $icon-security;
+    }
+}
+.icon-check {
+    &:before {
+        content: $icon-check;
+    }
+}
+.icon-phone_in_talk {
+    &:before {
+        content: $icon-phone_in_talk;
+    }
+}
+.icon-school {
+    &:before {
+        content: $icon-school;
+    }
+}
+.icon-search {
+    &:before {
+        content: $icon-search;
+    }
+}
+.icon-twitter {
+    &:before {
+        content: $icon-twitter;
+    }
+}
+.icon-facebook {
+    &:before {
+        content: $icon-facebook;
+    }
+}
+.icon-facebook-f {
+    &:before {
+        content: $icon-facebook-f;
+    }
+}
+.icon-bars {
+    &:before {
+        content: $icon-bars;
+    }
+}
+.icon-navicon {
+    &:before {
+        content: $icon-navicon;
+    }
+}
+.icon-reorder {
+    &:before {
+        content: $icon-reorder;
+    }
+}
+.icon-linkedin {
+    &:before {
+        content: $icon-linkedin;
+    }
+}
+.icon-code {
+    &:before {
+        content: $icon-code;
+    }
+}
+.icon-instagram {
+    &:before {
+        content: $icon-instagram;
+    }
+}
+.icon-bar-graph {
+    &:before {
+        content: $icon-bar-graph;
+    }
+}
+.icon-paperplane {
+    &:before {
+        content: $icon-paperplane;
+    }
+}
+.icon-display {
+    &:before {
+        content: $icon-display;
+    }
+}

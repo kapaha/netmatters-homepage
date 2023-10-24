@@ -1,0 +1,129 @@
+@use '../abstracts/' as *;
+
+.main-nav {
+    position: relative;
+
+    display: none;
+
+    background-color: $slate-800;
+
+    @include mq(lg) {
+        display: block;
+    }
+
+    &__menu {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &__menu-item {
+        flex: 1;
+
+        color: white;
+        line-height: 1;
+
+        &:hover {
+            background-color: var(--color-primary);
+
+            .main-nav__link::before {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+
+                width: 0;
+                height: 0;
+                z-index: 1;
+
+                border-style: solid;
+                border-width: 35px 68.5705px 0;
+                border-color: var(--color-primary) transparent transparent;
+
+                @include mq(xl) {
+                    border-width: 35px 87.711px 0;
+                }
+            }
+
+            .main-nav__icon {
+                color: white;
+            }
+
+            .sub-menu {
+                display: block;
+            }
+        }
+
+        @for $i from 1 through length($nav-colors) {
+            &:nth-child(#{$i}) {
+                --color-primary: #{nth($nav-colors, $i)};
+                --color-sub-menu: #{nth($nav-sub-menu-colors, $i)};
+            }
+        }
+    }
+
+    &__link {
+        position: relative;
+
+        padding: 1rem;
+        display: block;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        color: var(--color-primary);
+    }
+
+    &__text-small {
+        margin-top: 0.5rem;
+
+        font-size: 10px;
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: none;
+    width: 100%;
+    padding: 50px 0;
+
+    background-color: var(--color-sub-menu);
+
+    &__title {
+        font-size: 32px;
+    }
+
+    &__list {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__link {
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        align-items: center;
+        gap: 10px;
+
+        font-size: 19.2px;
+
+        & *:first-child {
+            text-align: center;
+        }
+
+        &:hover &-text {
+            text-decoration: underline;
+        }
+    }
+}
