@@ -33,14 +33,15 @@
 
                 width: 0;
                 height: 0;
-                z-index: 1;
+                z-index: 3;
+                width: 100%;
 
                 border-style: solid;
                 border-width: 35px 68.5705px 0;
                 border-color: var(--color-primary) transparent transparent;
 
                 @include mq(xl) {
-                    border-width: 35px 87.711px 0;
+                    border-width: 35px 83.4295px 0;
                 }
             }
 
@@ -50,6 +51,7 @@
 
             .sub-menu {
                 display: block;
+                z-index: 2;
             }
         }
 
