@@ -18,8 +18,14 @@
     padding: 0 1rem;
 
     @each $key, $value in $breakpoints {
-        @include mq($key) {
-            max-width: $value;
+        @if $key == xl {
+            @include mq($key) {
+                max-width: 1200px;
+            }
+        } @else {
+            @include mq($key) {
+                max-width: $value;
+            }
         }
     }
 }
