@@ -4,12 +4,10 @@ $columns: 12;
 
 .grid {
     display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat($columns, 1fr);
+    gap: 30px;
 
-    // All columns span full width as default to mimic normal document flow
-    > * {
-        grid-column: span $columns;
+    @include mq(md) {
+        grid-template-columns: repeat($columns, 1fr);
     }
 }
 
