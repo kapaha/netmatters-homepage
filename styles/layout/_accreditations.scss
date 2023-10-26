@@ -1,0 +1,17 @@
+.accreditations {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    margin-left: 20px;
+    gap: 90px;
+
+    overflow-x: hidden;
+
+    img {
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}

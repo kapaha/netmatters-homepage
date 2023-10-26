@@ -1,0 +1,32 @@
+@use '../abstracts/' as *;
+
+$columns: 12;
+
+.grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat($columns, 1fr);
+
+    // All columns span full width as default to mimic normal document flow
+    > * {
+        grid-column: span $columns;
+    }
+}
+
+// Standard column styles
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        grid-column: span $i;
+    }
+}
+
+// Column styles with media query variants
+@each $breakpoint, $value in $breakpoints {
+    @for $i from 1 through $columns {
+        .#{$breakpoint}\:col-#{$i} {
+            @include mq(#{$breakpoint}) {
+                grid-column: span $i;
+            }
+        }
+    }
+}
