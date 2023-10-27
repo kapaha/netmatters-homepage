@@ -34,10 +34,10 @@
 .btn-phone {
     @extend %btn-square;
 
-    color: $slate-800;
+    color: $slate-700;
 
     &:hover {
-        color: $slate-900;
+        color: $slate-800;
     }
 
     @include mq(md) {
@@ -50,11 +50,11 @@
 
     align-self: center;
 
-    background-color: $slate-800;
+    background-color: $slate-700;
     color: white;
 
     &:hover {
-        background-color: $slate-900;
+        background-color: $slate-800;
     }
 }
 
@@ -102,5 +102,21 @@
 
     &:hover {
         background-color: $gray-500;
+    }
+}
+
+.btn-google {
+    background-color: $blue-400;
+
+    &:hover {
+        background-color: $blue-500;
+    }
+}
+
+.btn-trustpilot {
+    background-color: $green-400;
+
+    &:hover {
+        background-color: $green-500;
     }
 }

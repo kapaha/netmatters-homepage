@@ -1,0 +1,103 @@
+@use '../abstracts/' as *;
+
+.about-us {
+    padding: 50px 0;
+
+    background-color: $slate-700;
+    color: $white;
+
+    p {
+        line-height: 1.875rem;
+    }
+
+    a:not(.btn) {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 10px;
+        margin-top: 25px;
+    }
+
+    .btn {
+        font-size: toRem(20);
+        text-transform: uppercase;
+        padding: 10px 27px;
+        border-radius: 6px;
+
+        align-self: flex-start;
+
+        line-height: 35px;
+    }
+
+    .grid {
+        gap: 50px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    &__welcome,
+    &__clients {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__welcome {
+        p:first-of-type {
+            font-weight: 600;
+        }
+
+        .btn {
+            background-color: $slate-800;
+
+            &:hover {
+                background-color: $slate-900;
+            }
+        }
+    }
+
+    &__clients {
+        p {
+            font-weight: 600;
+        }
+
+        p:first-of-type {
+            font-size: 1.3rem;
+        }
+
+        p:not(:first-of-type) {
+            font-size: 1.05rem;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 40px;
+
+        font-size: toRem(36);
+        font-weight: 600;
+    }
+
+    &__body {
+        flex: 1;
+
+        > * + * {
+            margin-top: 25px;
+        }
+    }
+
+    &__star {
+        font-size: 45px;
+        color: orange;
+    }
+
+    &__quote-author {
+        color: #a3a8ac;
+    }
+}
