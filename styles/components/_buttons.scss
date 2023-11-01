@@ -120,3 +120,35 @@
         background-color: $green-500;
     }
 }
+
+.btn--silver {
+    background-color: $silver-400;
+
+    &:hover {
+        background-color: $silver-500;
+    }
+}
+
+.btn--blue {
+    background-color: $blue-400;
+
+    &:hover {
+        background-color: $blue-500;
+    }
+}
+
+.btn--green {
+    background-color: $green-400;
+
+    &:hover {
+        background-color: $green-500;
+    }
+}
+
+.btn--purple {
+    background-color: $purple-400;
+
+    &:hover {
+        background-color: $purple-500;
+    }
+}
