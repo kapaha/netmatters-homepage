@@ -1,0 +1,48 @@
+@use '../abstracts/' as *;
+
+.section {
+    padding-top: 50px;
+
+    @include mq(md) {
+        padding-bottom: 50px;
+    }
+
+    > * + * {
+        margin-top: 30px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        font-size: 2.7rem;
+        font-weight: 600;
+        color: $slate-700;
+    }
+
+    &__cta {
+        color: $slate-700;
+        text-align: center;
+        font-size: 1.625rem;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @include mq(md) {
+            display: none;
+        }
+
+        &--desktop {
+            display: none;
+
+            @include mq(md) {
+                display: initial;
+            }
+        }
+    }
+}
