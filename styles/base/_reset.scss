@@ -33,3 +33,15 @@ button {
 li {
     list-style: none;
 }
+
+input {
+    &[type='text'],
+    &[type='email'] {
+        display: block;
+        width: 100%;
+    }
+}
+
+label {
+    display: block;
+}

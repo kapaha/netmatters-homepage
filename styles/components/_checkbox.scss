@@ -1,0 +1,67 @@
+@use '../abstracts/' as *;
+
+.custom-checkbox {
+    --form-control-color: white;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.25em;
+
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2;
+
+    input[type='checkbox'] {
+        --size: 2em;
+
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        /* For iOS < 15 */
+        background-color: var(--form-background);
+        /* Not removed via appearance */
+        margin: 0;
+
+        font: inherit;
+        color: currentColor;
+        width: var(--size);
+        height: var(--size);
+        border: 3px solid currentColor;
+        border-radius: 0.15em;
+        transform: translateY(-0.075em);
+
+        display: grid;
+        place-content: center;
+    }
+
+    input[type='checkbox']::before {
+        --size: 1em;
+
+        content: '';
+        width: var(--size);
+        height: var(--size);
+        clip-path: polygon(
+            0% 65%,
+            38.26% 94.93%,
+            100% 25%,
+            90% 16.16%,
+            38.26% 74.74%,
+            9.79% 52.49%
+        );
+        transform: scale(0);
+        transform-origin: bottom left;
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em var(--form-control-color);
+        /* Windows High Contrast Mode */
+        background-color: CanvasText;
+    }
+
+    input[type='checkbox']:checked {
+        background-color: $slate-700;
+    }
+
+    input[type='checkbox']:checked::before {
+        transform: scale(1);
+    }
+}
