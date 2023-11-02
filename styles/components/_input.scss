@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.input {
+    min-height: 47px;
+    padding: toRem(5) toRem(15);
+}
+
+.input--blue-focus {
+    border: 1px solid $dark-gray-200;
+
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:focus {
+        border-color: #5bc0de;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+            0 0 8px rgba(91, 192, 222, 0.6);
+    }
+}

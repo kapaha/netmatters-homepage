@@ -45,10 +45,11 @@
                     </a>
 
                     <form class="search-form-desktop">
-                        <div class="search-form-desktop__input">
+                        <div class="search-form-desktop__form-group">
                             <label for="search" class="sr-only">Search:</label>
 
                             <input
+                                class="input input--blue-focus"
                                 id="search"
                                 type="text"
                                 placeholder="Search..."
@@ -69,7 +70,12 @@
             <form class="search-form-mobile">
                 <label for="search" class="sr-only">Search:</label>
 
-                <input id="search" type="text" placeholder="Search..." />
+                <input
+                    class="input"
+                    id="search"
+                    type="text"
+                    placeholder="Search..."
+                />
 
                 <button class="btn-search-mobile" type="button">
                     <span class="icon-search"></span>
@@ -1181,12 +1187,22 @@
                         <div class="newsletter-signup__inputs">
                             <div>
                                 <label for="name">Your Name</label>
-                                <input type="text" id="name" required />
+                                <input
+                                    class="input input--blue-focus"
+                                    type="text"
+                                    id="name"
+                                    required
+                                />
                             </div>
 
                             <div>
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" required />
+                                <label for="email"> Your Email </label>
+                                <input
+                                    class="input input--blue-focus"
+                                    type="email"
+                                    id="email"
+                                    required
+                                />
                             </div>
                         </div>
 

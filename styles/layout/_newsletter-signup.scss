@@ -58,19 +58,5 @@
             font-weight: 600;
             margin-bottom: 0.5rem;
         }
-
-        input {
-            padding: 5px 15px;
-            min-height: 47px;
-
-            border: 1px solid $dark-gray-200;
-
-            &:focus {
-                border-color: #5bc0de;
-                outline: 0;
-                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-                    0 0 8px rgba(91, 192, 222, 0.6);
-            }
-        }
     }
 }

@@ -71,10 +71,19 @@
 
     background-color: $gray-400;
     color: white;
-    border-radius: 0;
+
+    border-radius: 0 3px 3px 0;
 
     &:hover {
         background-color: $gray-500;
+    }
+
+    @include mq(lg) {
+        border-radius: inherit;
+    }
+
+    @include mq(xl) {
+        border-radius: 0 3px 3px 0;
     }
 }
 
