@@ -49,12 +49,23 @@
     @extend %btn-square;
 
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 63px;
+    height: 56px;
 
     background-color: $slate-700;
     color: white;
 
     &:hover {
         background-color: $slate-800;
+    }
+
+    span {
+        background-color: white;
+        width: 33px;
+        height: 4px;
     }
 }
 
