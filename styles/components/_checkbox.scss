@@ -11,6 +11,8 @@
     font-weight: 600;
     line-height: 2;
 
+    cursor: pointer;
+
     input[type='checkbox'] {
         --size: 2em;
 
@@ -33,6 +35,8 @@
 
         display: grid;
         place-content: center;
+
+        cursor: pointer;
     }
 
     input[type='checkbox']::before {
