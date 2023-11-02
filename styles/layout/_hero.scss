@@ -3,7 +3,7 @@
 .hero {
     position: relative;
 
-    padding: 60px 15px;
+    padding: toRem(60) toRem(15);
     min-height: 550px;
 
     display: grid;
@@ -33,7 +33,7 @@
     }
 
     &__lead {
-        margin-top: 20px;
+        margin-top: toRem(20);
 
         font-size: 1.25rem;
         font-weight: 600;
@@ -88,9 +88,9 @@
     }
 
     .btn {
-        margin-top: 30px;
+        margin-top: toRem(30);
 
-        padding: 15px 30px;
+        padding: toRem(15) toRem(30);
 
         background-color: $purple-400;
         text-transform: uppercase;

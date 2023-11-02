@@ -8,7 +8,7 @@
     input {
         height: 100%;
 
-        font-size: 14px;
+        font-size: toRem(14);
 
         &::placeholder {
             color: $dark-gray-500;

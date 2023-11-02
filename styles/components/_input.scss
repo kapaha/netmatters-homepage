@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .input {
-    min-height: 47px;
+    min-height: toRem(47);
     padding: toRem(5) toRem(15);
 }
 

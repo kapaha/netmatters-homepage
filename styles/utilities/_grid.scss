@@ -4,7 +4,7 @@ $columns: 12;
 
 .grid {
     display: grid;
-    gap: 30px;
+    gap: toRem(30);
 
     @include mq(md) {
         grid-template-columns: repeat($columns, 1fr);

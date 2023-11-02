@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .about-us {
-    padding: 50px 0;
+    padding: toRem(50) 0;
 
     background-color: $slate-700;
     color: $white;
@@ -19,28 +19,28 @@
     .btn-group {
         display: flex;
         flex-wrap: wrap;
-        row-gap: 20px;
-        column-gap: 10px;
-        margin-top: 25px;
+        row-gap: toRem(20);
+        column-gap: toRem(10);
+        margin-top: toRem(25);
     }
 
     .btn {
         font-size: toRem(20);
         text-transform: uppercase;
-        padding: 10px 27px;
+        padding: toRem(10) toRem(27);
         border-radius: 6px;
 
         align-self: flex-start;
 
-        line-height: 35px;
+        line-height: toRem(35);
     }
 
     .grid {
-        gap: 50px;
+        gap: toRem(50);
     }
 
     .icon {
-        font-size: 20px;
+        font-size: toRem(20);
     }
 
     &__welcome,
@@ -78,7 +78,7 @@
     }
 
     &__heading {
-        margin-bottom: 40px;
+        margin-bottom: toRem(40);
 
         font-size: toRem(36);
         font-weight: 600;
@@ -88,12 +88,12 @@
         flex: 1;
 
         > * + * {
-            margin-top: 25px;
+            margin-top: toRem(25);
         }
     }
 
     &__star {
-        font-size: 45px;
+        font-size: toRem(45);
         color: orange;
     }
 

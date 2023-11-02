@@ -1,14 +1,14 @@
 @use '../abstracts/' as *;
 
 .section {
-    padding-top: 50px;
+    padding-top: toRem(50);
 
     @include mq(md) {
-        padding-bottom: 50px;
+        padding-bottom: toRem(50);
     }
 
     > * + * {
-        margin-top: 50px;
+        margin-top: toRem(50);
     }
 
     &__header {

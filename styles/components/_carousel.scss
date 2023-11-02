@@ -10,6 +10,9 @@
     overflow-x: clip;
 
     img {
+        max-height: 70px;
+        max-width: 200px;
+
         filter: grayscale(1);
 
         &:hover {
@@ -24,11 +27,6 @@
 
 .carousel-clients {
     @extend %carousel;
-
-    img {
-        max-height: 70px;
-        max-width: 200px;
-    }
 
     h3 {
         font-size: 1.125rem;
