@@ -22,11 +22,21 @@
         <header class="header container">
             <div class="header__top">
                 <a href="#">
-                    <img
-                        class="header__logo"
-                        src="/images/logos/nm-logo.webp"
-                        alt="Netmatters Logo"
-                    />
+                    <picture>
+                        <source
+                            srcset="/images/logos/nm-logo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/logos/nm-logo.png"
+                            type="image/png"
+                        />
+                        <img
+                            class="header__logo"
+                            srcset="/images/logos/nm-logo.png"
+                            alt="Netmatters Logo"
+                        />
+                    </picture>
                 </a>
 
                 <div class="header__actions">
@@ -638,7 +648,15 @@
                 </div>
 
                 <div class="hero__image-container">
-                    <img class="hero__image" src="/images/hero.webp" alt="" />
+                    <picture>
+                        <source srcset="/images/hero.webp" type="image/webp" />
+                        <source srcset="/images/hero.png" type="image/png" />
+                        <img
+                            class="hero__image"
+                            src="/images/hero.png"
+                            alt=""
+                        />
+                    </picture>
                 </div>
             </div>
 
@@ -744,29 +762,158 @@
 
             <!-- Accreditations -->
             <div class="carousel">
-                <img src="/images/accreditations/google-partner.webp" alt="" />
-                <img src="/images/accreditations/living_wage.webp" alt="" />
-                <img src="/images/accreditations/norfolk_prohelp.webp" alt="" />
-                <img
-                    src="/images/accreditations/investing-in-future-growth.webp"
-                    alt=""
-                />
-                <img
-                    src="/images/accreditations/norfolk-carbon-charter.webp"
-                    alt=""
-                />
-                <img src="/images/accreditations/PPC_logo.webp" alt="" />
-                <img
-                    src="/images/accreditations/princess-royal-training.webp"
-                    alt=""
-                />
-                <img src="/images/accreditations/future-50.webp" alt="" />
-                <img src="/images/accreditations/qms.webp" alt="" />
-                <img src="/images/accreditations/iso_27001.webp" alt="" />
-                <img
-                    src="/images/accreditations/skills-of-tomorrow.webp"
-                    alt=""
-                />
+                <picture>
+                    <source
+                        srcset="/images/accreditations/google-partner.webp"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="/images/accreditations/google-partner.jpg"
+                        type="image/jpg"
+                    />
+                    <img
+                        src="/images/accreditations/google-partner.jpg"
+                        alt=""
+                    />
+                </picture>
+                <picture>
+                    <source
+                        srcset="/images/accreditations/living_wage.webp"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="/images/accreditations/living_wage.png"
+                        type="image/png"
+                    />
+                    <img src="/images/accreditations/living_wage.png" alt="" />
+                </picture>
+                <picture>
+                    <source
+                        srcset="/images/accreditations/norfolk_prohelp.webp"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="/images/accreditations/norfolk_prohelp.png"
+                        type="image/png"
+                    />
+                    <img
+                        src="/images/accreditations/norfolk_prohelp.png"
+                        alt=""
+                    />
+                </picture>
+                <picture>
+                    <source
+                        srcset="
+                            /images/accreditations/investing-in-future-growth.webp
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="
+                            /images/accreditations/investing-in-future-growth.jpg
+                        "
+                        type="image/jpg"
+                    />
+                    <img
+                        src="/images/accreditations/investing-in-future-growth.jpg"
+                        alt=""
+                    />
+                </picture>
+                <picture>
+                    <source
+                        srcset="
+                            /images/accreditations/norfolk-carbon-charter.webp
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="
+                            /images/accreditations/norfolk-carbon-charter.jpg
+                        "
+                        type="image/jpg
+                            "
+                    />
+                    <img
+                        src="/images/accreditations/norfolk-carbon-charter.jpg"
+                        alt=""
+                    />
+                </picture>
+                <picture>
+                    <source
+                        srcset="/images/accreditations/PPC_logo.webp"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="/images/accreditations/PPC_logo.jpg"
+                        type="image/jpg"
+                    />
+                    <img src="/images/accreditations/PPC_logo.jpg" alt="" />
+                </picture>
+                <picture>
+                    <source
+                        srcset="
+                            /images/accreditations/princess-royal-training.webp
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="
+                            /images/accreditations/princess-royal-training.jpg
+                        "
+                        type="image/jpg"
+                    />
+                    <img
+                        src="/images/accreditations/princess-royal-training.jpg"
+                        alt=""
+                    />
+                </picture>
+                <picture>
+                    <source
+                        srcset="/images/accreditations/future-50.webp"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="/images/accreditations/future-50.jpg"
+                        type="image/jpg"
+                    />
+                    <img src="/images/accreditations/future-50.jpg" alt="" />
+                </picture>
+                <picture>
+                    <source
+                        srcset="/images/accreditations/qms.webp"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="/images/accreditations/qms.jpg"
+                        type="image/jpg"
+                    />
+                    <img src="/images/accreditations/qms.jpg" alt="" />
+                </picture>
+                <picture>
+                    <source
+                        srcset="/images/accreditations/iso_27001.webp"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="/images/accreditations/iso_27001.jpg"
+                        type="image/jpg"
+                    />
+                    <img src="/images/accreditations/iso_27001.jpg" alt="" />
+                </picture>
+                <picture>
+                    <source
+                        srcset="/images/accreditations/skills-of-tomorrow.webp"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="/images/accreditations/skills-of-tomorrow.jpg"
+                        type="image/jpg"
+                    />
+                    <img
+                        src="/images/accreditations/skills-of-tomorrow.jpg"
+                        alt=""
+                    />
+                </picture>
             </div>
 
             <!-- About us -->
@@ -875,10 +1022,24 @@
                         <a class="card-news-container__link" href="#"></a>
                         <div class="card-news">
                             <div class="card-news__img-container">
-                                <img
-                                    src="/images/news/it-office-administrator.webp"
-                                    alt=""
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/news/it-office-administrator.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/news/it-office-administrator.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/news/it-office-administrator.png"
+                                        alt=""
+                                    />
+                                </picture>
                                 <a class="card-news__category" href="#">
                                     Careers
                                 </a>
@@ -894,10 +1055,24 @@
                                     <div class="btn">Read More</div>
                                 </div>
                                 <div class="card-news__user">
-                                    <img
-                                        src="/images/news/bethany-shakespeare.webp"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                /images/news/bethany-shakespeare.webp
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                /images/news/bethany-shakespeare.png
+                                            "
+                                            type="image/png"
+                                        />
+                                        <img
+                                            src="/images/news/bethany-shakespeare.png"
+                                            alt=""
+                                        />
+                                    </picture>
                                     <div>
                                         <p>Posted by Bethany Shakespeare</p>
                                         <p>23rd October 2023</p>
@@ -911,10 +1086,22 @@
                         <a class="card-news-container__link" href="#"></a>
                         <div class="card-news">
                             <div class="card-news__img-container">
-                                <img
-                                    src="/images/news/how-are-mobile.webp"
-                                    alt=""
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/news/how-are-mobile.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="/images/news/how-are-mobile.png"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/news/how-are-mobile.png"
+                                        alt=""
+                                    />
+                                </picture>
                                 <a class="card-news__category" href="#">News</a>
                             </div>
                             <div class="card-news__body">
@@ -934,10 +1121,24 @@
                                     <div class="btn">Read More</div>
                                 </div>
                                 <div class="card-news__user">
-                                    <img
-                                        src="/images/news/netmatters-ltd.webp"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                /images/news/netmatters-ltd.webp
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                /images/news/netmatters-ltd.png
+                                            "
+                                            type="image/png"
+                                        />
+                                        <img
+                                            src="/images/news/netmatters-ltd.png"
+                                            alt=""
+                                        />
+                                    </picture>
                                     <div>
                                         <p>Posted by Netmatters</p>
                                         <p>12th October 2023</p>
@@ -951,10 +1152,24 @@
                         <a class="card-news-container__link" href="#"></a>
                         <div class="card-news">
                             <div class="card-news__img-container">
-                                <img
-                                    src="/images/news/mid-level-web-developer.webp"
-                                    alt=""
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/news/mid-level-web-developer.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/news/mid-level-web-developer.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/news/mid-level-web-developer.png"
+                                        alt=""
+                                    />
+                                </picture>
                                 <a class="card-news__category" href="#">
                                     Careers
                                 </a>
@@ -970,10 +1185,24 @@
                                     <div class="btn">Read More</div>
                                 </div>
                                 <div class="card-news__user">
-                                    <img
-                                        src="/images/news/rebecca-moore.webp"
-                                        alt=""
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                /images/news/rebecca-moore.webp
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                /images/news/rebecca-moore.png
+                                            "
+                                            type="image/png"
+                                        />
+                                        <img
+                                            src="/images/news/rebecca-moore.png"
+                                            alt=""
+                                        />
+                                    </picture>
                                     <div>
                                         <p>Posted by Rebecca Moore</p>
                                         <p>27th September 2023</p>
@@ -995,7 +1224,17 @@
             <!-- Clients -->
             <div class="carousel-clients">
                 <div class="carousel-clients__image-container">
-                    <img src="/images/clients/black_swan_logo.webp" alt="" />
+                    <picture>
+                        <source
+                            srcset="/images/clients/black_swan_logo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/black_swan_logo.png"
+                            type="image/png"
+                        />
+                        <img src="/images/clients/black_swan_logo.png" alt="" />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Black Swan Care Group</h3>
                         <p>
@@ -1012,7 +1251,17 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img src="/images/clients/xupes_logo.webp" alt="" />
+                    <picture>
+                        <source
+                            srcset="/images/clients/xupes_logo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/xupes_logo.png"
+                            type="image/png"
+                        />
+                        <img src="/images/clients/xupes_logo.png" alt="" />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Xupes</h3>
                         <div class="arrow-down"></div>
@@ -1020,7 +1269,17 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img src="/images/clients/beat_logo.webp" alt="" />
+                    <picture>
+                        <source
+                            srcset="/images/clients/beat_logo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/beat_logo.png"
+                            type="image/png"
+                        />
+                        <img src="/images/clients/beat_logo.png" alt="" />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>BEAT</h3>
                         <p>The UK's eating disorder charity founded in 1989.</p>
@@ -1029,10 +1288,20 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img
-                        src="/images/clients/survey_solutions_logo.webp"
-                        alt=""
-                    />
+                    <picture>
+                        <source
+                            srcset="/images/clients/survey_solutions_logo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/survey_solutions_logo.png"
+                            type="image/png"
+                        />
+                        <img
+                            src="/images/clients/survey_solutions_logo.png"
+                            alt=""
+                        />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Survey Solutions</h3>
                         <div class="arrow-down"></div>
@@ -1040,10 +1309,22 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img
-                        src="/images/clients/girl_guides_anglia_logo.webp"
-                        alt=""
-                    />
+                    <picture>
+                        <source
+                            srcset="
+                                /images/clients/girl_guides_anglia_logo.webp
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/girl_guides_anglia_logo.png"
+                            type="image/png"
+                        />
+                        <img
+                            src="/images/clients/girl_guides_anglia_logo.png"
+                            alt=""
+                        />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Girl Guiding Anglia</h3>
                         <p>
@@ -1059,7 +1340,17 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img src="/images/clients/sweetzy_logo.webp" alt="" />
+                    <picture>
+                        <source
+                            srcset="/images/clients/sweetzy_logo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/sweetzy_logo.png"
+                            type="image/png"
+                        />
+                        <img src="/images/clients/sweetzy_logo.png" alt="" />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Sweetzy</h3>
                         <p>
@@ -1075,7 +1366,20 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img src="/images/clients/howespercivallogo.webp" alt="" />
+                    <picture>
+                        <source
+                            srcset="/images/clients/howespercivallogo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/howespercivallogo.png"
+                            type="image/png"
+                        />
+                        <img
+                            src="/images/clients/howespercivallogo.png"
+                            alt=""
+                        />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Howes Percival</h3>
                         <div class="arrow-down"></div>
@@ -1083,10 +1387,24 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img
-                        src="/images/clients/girls_day_school_trust_logob.webp"
-                        alt=""
-                    />
+                    <picture>
+                        <source
+                            srcset="
+                                /images/clients/girls_day_school_trust_logob.webp
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="
+                                /images/clients/girls_day_school_trust_logob.png
+                            "
+                            type="image/png"
+                        />
+                        <img
+                            src="/images/clients/girls_day_school_trust_logob.png"
+                            alt=""
+                        />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>GDST</h3>
                         <p>
@@ -1102,10 +1420,24 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img
-                        src="/images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.webp"
-                        alt=""
-                    />
+                    <picture>
+                        <source
+                            srcset="
+                                /images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.webp
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="
+                                /images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png
+                            "
+                            type="image/png"
+                        />
+                        <img
+                            src="/images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png"
+                            alt=""
+                        />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Ashcroft Partnership LLP</h3>
                         <p>
@@ -1123,10 +1455,24 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img
-                        src="/images/clients/onetravellerlogo_white_figuire.webp"
-                        alt=""
-                    />
+                    <picture>
+                        <source
+                            srcset="
+                                /images/clients/onetravellerlogo_white_figuire.webp
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="
+                                /images/clients/onetravellerlogo_white_figuire.png
+                            "
+                            type="image/png"
+                        />
+                        <img
+                            src="/images/clients/onetravellerlogo_white_figuire.png"
+                            alt=""
+                        />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>One Traveller</h3>
                         <p>
@@ -1142,7 +1488,17 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img src="/images/clients/searles_logo.webp" alt="" />
+                    <picture>
+                        <source
+                            srcset="/images/clients/searles_logo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/searles_logo.jpg"
+                            type="image/jpg"
+                        />
+                        <img src="/images/clients/searles_logo.jpg" alt="" />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Searles Leisure Resort</h3>
                         <p>
@@ -1159,7 +1515,17 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img src="/images/clients/busseys_logo.webp" alt="" />
+                    <picture>
+                        <source
+                            srcset="/images/clients/busseys_logo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/busseys_logo.png"
+                            type="image/png"
+                        />
+                        <img src="/images/clients/busseys_logo.png" alt="" />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Busseys</h3>
                         <p>One of the UK's leading Ford dealerships.</p>
@@ -1168,7 +1534,17 @@
                 </div>
 
                 <div class="carousel-clients__image-container">
-                    <img src="/images/clients/crane_logo.webp" alt="" />
+                    <picture>
+                        <source
+                            srcset="/images/clients/crane_logo.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="/images/clients/crane_logo.png"
+                            type="image/png"
+                        />
+                        <img src="/images/clients/crane_logo.png" alt="" />
+                    </picture>
                     <div class="carousel-clients__tooltip">
                         <h3>Crane Garden Buildings</h3>
                         <p>
