@@ -1,0 +1,104 @@
+@use '../abstracts/' as *;
+
+.footer-container {
+    background-color: $slate-700;
+    color: $white;
+}
+
+.footer {
+    --spacing: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: toRem(30);
+    padding-bottom: toRem(30);
+
+    gap: calc(var(--spacing) * 1.5);
+
+    @include mq(xl) {
+        flex-direction: row;
+        gap: toRem(80);
+        padding-top: toRem(50);
+        padding-bottom: toRem(50);
+    }
+
+    a:not(.btn) {
+        font-size: 0.8125rem;
+        line-height: 1.375rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        margin-bottom: var(--spacing);
+    }
+
+    &__logo {
+        width: 250px;
+
+        @media screen and (min-width: 480px) {
+            width: 320px;
+        }
+    }
+
+    &__socials {
+        margin-top: var(--spacing);
+
+        div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: toRem(10);
+
+            @media screen and (min-width: 480px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+
+    &__links {
+        gap: var(--spacing);
+        align-self: stretch;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .btn {
+        background-color: hsl(232, 18%, 16%);
+        border-radius: 0;
+    }
+
+    .icon {
+        font-size: toRem(26);
+    }
+}
+
+.facebook {
+    &:hover {
+        background-color: hsl(221, 44%, 42%);
+    }
+}
+
+.linkedin {
+    &:hover {
+        background-color: hsl(201, 100%, 36%);
+    }
+}
+
+.twitter {
+    &:hover {
+        background-color: hsl(197, 99%, 47%);
+    }
+}
+
+.instagram {
+    &:hover {
+        background-color: hsl(336, 69%, 52%);
+    }
+}
