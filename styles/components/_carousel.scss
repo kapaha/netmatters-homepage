@@ -9,10 +9,11 @@
 
     overflow-x: clip;
 
-    img {
-        max-height: 70px;
-        max-width: 200px;
+    > * {
+        flex-shrink: 0;
+    }
 
+    img {
         filter: grayscale(1);
 
         &:hover {
@@ -48,6 +49,19 @@
 
     &__image-container {
         position: relative;
+
+        max-width: 200px;
+        height: 70px;
+
+        picture,
+        img {
+            width: auto;
+            height: 100%;
+        }
+
+        img {
+            object-fit: contain;
+        }
 
         &:hover .carousel-clients__tooltip {
             display: block;
