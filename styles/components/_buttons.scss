@@ -48,7 +48,9 @@
 .btn-hamburger {
     @extend %btn-square;
 
+    flex-shrink: 0;
     align-self: center;
+
     display: flex;
     flex-direction: column;
     gap: 6px;
