@@ -59,7 +59,8 @@
     background-color: $slate-700;
     color: white;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         background-color: $slate-800;
     }
 
