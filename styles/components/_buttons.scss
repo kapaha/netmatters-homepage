@@ -34,6 +34,8 @@
 .btn-phone {
     @extend %btn-square;
 
+    padding: 0;
+
     color: $slate-700;
 
     &:hover {
