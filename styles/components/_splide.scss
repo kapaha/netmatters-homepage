@@ -1,6 +1,8 @@
+@use '../abstracts/' as *;
+
 // Override Splide (Carousel library) styles
 .splide {
-    z-index: 2;
+    z-index: $zi-splide;
 
     &__track {
         overflow: visible !important;

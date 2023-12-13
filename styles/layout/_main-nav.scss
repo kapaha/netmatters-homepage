@@ -33,7 +33,7 @@
 
                 width: 0;
                 height: 0;
-                z-index: 3;
+                z-index: $zi-main-nav-triangle;
                 width: 100%;
 
                 border-style: solid;
@@ -51,7 +51,7 @@
 
             .sub-menu {
                 display: block;
-                z-index: 2;
+                z-index: $zi-main-nav-sub-menu;
             }
         }
 

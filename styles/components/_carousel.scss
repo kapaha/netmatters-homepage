@@ -75,7 +75,6 @@
         background-color: getColour(slate, 700);
         color: white;
         text-align: center;
-        z-index: 999;
 
         * + *:not(.arrow-down) {
             margin-top: 1.25rem;

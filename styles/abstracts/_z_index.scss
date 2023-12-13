@@ -1,0 +1,10 @@
+// z index values grouped if they affect each other
+
+$zi-main-nav-sub-menu: 100;
+$zi-main-nav-triangle: $zi-main-nav-sub-menu + 1;
+
+$zi-hero-content: 1;
+
+$zi-card-news-link: 1;
+$zi-card-news-category: $zi-card-news-link + 1;
+$zi-splide: $zi-card-news-link + 1;
