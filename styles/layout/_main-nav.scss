@@ -5,7 +5,7 @@
 
     display: none;
 
-    background-color: $slate-700;
+    background-color: getColour(slate, 700);
 
     @include mq(lg) {
         display: block;

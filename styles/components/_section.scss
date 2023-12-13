@@ -20,11 +20,11 @@
     &__heading {
         font-size: 2.7rem;
         font-weight: 600;
-        color: $slate-700;
+        color: getColour(slate, 700);
     }
 
     &__cta {
-        color: $slate-700;
+        color: getColour(slate, 700);
         text-align: center;
         font-size: 1.625rem;
         font-weight: 600;

@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .footer-container {
-    background-color: $slate-700;
+    background-color: getColour(slate, 700);
     color: $white;
 }
 

@@ -1,43 +1,65 @@
+// Color variables
 $white: #ffffff;
 
-$gray-100: hsl(230, 5%, 90%);
-$gray-400: hsl(230, 5%, 62%);
-$gray-500: hsl(226, 5%, 52%);
+$colors: (
+    'gray': (
+        '100': hsl(230, 5%, 90%),
+        '400': hsl(230, 5%, 62%),
+        '500': hsl(226, 5%, 52%),
+    ),
+    'dark-gray': (
+        '100': hsl(0, 0%, 90%),
+        '200': hsl(0, 0%, 80%),
+        '500': hsl(0, 0%, 53%),
+        '600': hsl(0, 0%, 40%),
+        '700': hsl(0, 0%, 33%),
+    ),
+    'slate': (
+        '700': hsl(233, 15%, 24%),
+        '800': hsl(232, 16%, 18%),
+        '900': hsl(230, 14%, 8%),
+    ),
+    'blue': (
+        '400': hsl(214, 65%, 55%),
+        '500': hsl(214, 65%, 47%),
+    ),
+    'silver': (
+        '400': hsl(213, 23%, 51%),
+        '500': hsl(213, 23%, 42%),
+    ),
+    'green': (
+        '400': hsl(145, 63%, 49%),
+        '500': hsl(146, 64%, 39%),
+    ),
+    'red': (
+        '400': hsl(2, 65%, 55%),
+        '500': hsl(2, 65%, 45%),
+    ),
+    'purple': (
+        '400': hsl(272, 29%, 56%),
+        '500': hsl(272, 30%, 47%),
+    ),
+    'pink': (
+        '400': hsl(345, 91%, 55%),
+        '500': hsl(345, 92%, 45%),
+    ),
+    'orange': (
+        '400': hsl(10, 69%, 48%),
+        '500': hsl(10, 70%, 38%),
+    ),
+);
 
-$dark-gray-100: hsl(0, 0%, 90%);
-$dark-gray-200: hsl(0, 0%, 80%);
-$dark-gray-500: hsl(0, 0%, 53%);
-$dark-gray-600: hsl(0, 0%, 40%);
-$dark-gray-700: hsl(0, 0%, 33%);
+@function getColour($base, $shade) {
+    $color: map-get(map-get($colors, '#{$base}'), '#{$shade}');
 
-$slate-700: hsl(233, 15%, 24%);
-$slate-800: hsl(232, 16%, 18%);
-$slate-900: hsl(230, 14%, 8%);
+    @return $color;
+}
 
-$blue-400: hsl(214, 65%, 55%);
-$blue-500: hsl(214, 65%, 47%);
+// Color lists;
+$nav-colors: getColour(silver, 400), getColour(blue, 400), getColour(green, 400),
+    getColour(red, 400), getColour(purple, 400), getColour(pink, 400),
+    getColour(orange, 400);
 
-$silver-400: hsl(213, 23%, 51%);
-$silver-500: hsl(213, 23%, 42%);
-
-$green-400: hsl(145, 63%, 49%);
-$green-500: hsl(146, 64%, 39%);
-
-$red-400: hsl(2, 65%, 55%);
-$red-500: hsl(2, 65%, 45%);
-
-$purple-400: hsl(272, 29%, 56%);
-$purple-500: hsl(272, 30%, 47%);
-
-$pink-400: hsl(345, 91%, 55%);
-$pink-500: hsl(345, 92%, 45%);
-
-$orange-400: hsl(10, 69%, 48%);
-$orange-500: hsl(10, 70%, 38%);
-
-// Color lists
-$nav-colors: $silver-400, $blue-400, $green-400, $red-400, $purple-400,
-    $pink-400, $orange-400;
-
-$nav-sub-menu-colors: $silver-500, $blue-500, $green-500, $red-500, $purple-500,
-    $pink-500, $orange-500;
+$nav-sub-menu-colors: getColour(silver, 500), getColour(blue, 500),
+    getColour(green, 500), getColour(red, 500), getColour(purple, 500),
+    getColour(pink, 500), getColour(orange, 500);

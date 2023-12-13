@@ -4,8 +4,8 @@
     padding-top: toRem(50);
     padding-bottom: toRem(50);
 
-    background-color: $dark-gray-100;
-    color: $slate-700;
+    background-color: getColour(dark-gray, 100);
+    color: getColour(slate, 700);
 
     form {
         > * + * {
@@ -21,7 +21,7 @@
         text-decoration: underline;
 
         &:hover {
-            color: $slate-800;
+            color: getColour(slate, 800);
         }
     }
 

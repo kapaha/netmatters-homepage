@@ -62,7 +62,7 @@
     }
 
     input[type='checkbox']:checked {
-        background-color: $slate-700;
+        background-color: getColour(slate, 700);
     }
 
     input[type='checkbox']:checked::before {

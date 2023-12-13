@@ -81,7 +81,7 @@
         width: 300px;
         padding: toRem(20);
 
-        background-color: $slate-700;
+        background-color: getColour(slate, 700);
         color: white;
         text-align: center;
         z-index: 999;
@@ -109,7 +109,7 @@
 
                 border-style: solid;
                 border-width: var(--arrow-size) var(--arrow-size) 0;
-                border-color: $slate-700 transparent transparent;
+                border-color: getColour(slate, 700) transparent transparent;
             }
         }
     }

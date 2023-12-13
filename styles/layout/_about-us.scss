@@ -3,7 +3,7 @@
 .about-us {
     padding: toRem(50) 0;
 
-    background-color: $slate-700;
+    background-color: getColour(slate, 700);
     color: $white;
 
     p {
@@ -55,10 +55,10 @@
         }
 
         .btn {
-            background-color: $slate-800;
+            background-color: getColour(slate, 800);
 
             &:hover {
-                background-color: $slate-900;
+                background-color: getColour(slate, 900);
             }
         }
     }

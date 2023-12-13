@@ -6,7 +6,7 @@
 }
 
 .input--blue-focus {
-    border: 1px solid $dark-gray-200;
+    border: 1px solid getColour(dark-gray, 200);
 
     transition:
         border-color 0.15s ease-in-out,

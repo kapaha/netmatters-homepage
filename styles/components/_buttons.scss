@@ -1,3 +1,4 @@
+@use 'sass:map';
 @use '../abstracts' as *;
 
 %btn-base {
@@ -36,10 +37,10 @@
 
     padding: 0;
 
-    color: $slate-700;
+    color: getColour(slate, 700);
 
     &:hover {
-        color: $slate-800;
+        color: getColour(slate, 800);
     }
 
     @include mq(md) {
@@ -60,12 +61,12 @@
     height: 56px;
     padding: 0;
 
-    background-color: $slate-700;
+    background-color: getColour(slate, 700);
     color: white;
 
     &:hover,
     &:focus-visible {
-        background-color: $slate-800;
+        background-color: getColour(slate, 800);
     }
 
     span {
@@ -86,13 +87,13 @@
     width: 55px;
     flex-shrink: 0;
 
-    background-color: $gray-400;
+    background-color: getColour(gray, 400);
     color: white;
 
     border-radius: 0 3px 3px 0;
 
     &:hover {
-        background-color: $gray-500;
+        background-color: getColour(gray, 500);
     }
 
     @include mq(lg) {
@@ -116,73 +117,52 @@
 }
 
 .btn-support {
-    background-color: $blue-400;
+    background-color: getColour(blue, 400);
 
     &:hover {
-        background-color: $blue-500;
+        background-color: getColour(blue, 500);
     }
 }
 
 .btn-contact {
-    background-color: $gray-400;
+    background-color: getColour(gray, 400);
 
     &:hover {
-        background-color: $gray-500;
+        background-color: getColour(gray, 500);
     }
 }
 
 .btn-google {
-    background-color: $blue-400;
+    background-color: getColour(blue, 400);
 
     &:hover {
-        background-color: $blue-500;
+        background-color: getColour(blue, 500);
     }
 }
 
 .btn-trustpilot {
-    background-color: $green-400;
+    background-color: getColour(green, 400);
 
     &:hover {
-        background-color: $green-500;
+        background-color: getColour(green, 500);
     }
 }
 
-.btn--silver {
-    background-color: $silver-400;
+// Button background colors
+@each $colour, $shades in $colors {
+    $shade: 400;
+    $hoverShade: 500;
 
-    &:hover {
-        background-color: $silver-500;
+    @if $colour == slate {
+        $shade: 700;
+        $hoverShade: 800;
     }
-}
 
-.btn--blue {
-    background-color: $blue-400;
+    .btn--#{$colour} {
+        background-color: getColour($colour, $shade);
 
-    &:hover {
-        background-color: $blue-500;
-    }
-}
-
-.btn--green {
-    background-color: $green-400;
-
-    &:hover {
-        background-color: $green-500;
-    }
-}
-
-.btn--purple {
-    background-color: $purple-400;
-
-    &:hover {
-        background-color: $purple-500;
-    }
-}
-
-.btn--slate {
-    background-color: $slate-700;
-
-    &:hover {
-        background-color: $slate-800;
+        &:hover {
+            background-color: getColour($colour, $hoverShade);
+        }
     }
 }

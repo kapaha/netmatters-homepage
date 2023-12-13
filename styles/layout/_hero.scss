@@ -19,6 +19,7 @@
 
     &__content {
         z-index: 1;
+        width: 100%;
     }
 
     &__heading {
@@ -92,11 +93,6 @@
 
         padding: toRem(15) toRem(30);
 
-        background-color: $purple-400;
         text-transform: uppercase;
-
-        &:hover {
-            background-color: $purple-500;
-        }
     }
 }
