@@ -1,17 +1,8 @@
 @use '../abstracts/' as *;
 
 %carousel {
-    display: flex;
-    align-items: center;
-    gap: toRem(90);
     margin: toRem(50) 0;
-    padding-left: toRem(50);
-
-    overflow-x: clip;
-
-    > * {
-        flex-shrink: 0;
-    }
+    padding-left: toRem(20);
 
     img {
         filter: grayscale(1);

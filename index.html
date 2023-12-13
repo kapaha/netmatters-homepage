@@ -671,7 +671,11 @@
 
         <main>
             <!-- Hero -->
-            <section class="splide" aria-label="Hero carousel">
+            <section
+                id="carousel-hero"
+                class="splide"
+                aria-label="Hero carousel"
+            >
                 <div class="splide__track">
                     <ul class="splide__list">
                         <div class="hero splide__slide">
@@ -1034,196 +1038,252 @@
             </div>
 
             <!-- Accreditations -->
-            <div class="carousel">
-                <picture>
-                    <source
-                        srcset="/images/accreditations/google-partner.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="/images/accreditations/google-partner.jpg"
-                        type="image/jpg"
-                    />
-                    <img
-                        src="/images/accreditations/google-partner.jpg"
-                        alt=""
-                        width="169"
-                        height="70"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="/images/accreditations/living_wage.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="/images/accreditations/living_wage.png"
-                        type="image/png"
-                    />
-                    <img
-                        src="/images/accreditations/living_wage.png"
-                        alt=""
-                        width="88"
-                        height="70"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="/images/accreditations/norfolk_prohelp.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="/images/accreditations/norfolk_prohelp.png"
-                        type="image/png"
-                    />
-                    <img
-                        src="/images/accreditations/norfolk_prohelp.png"
-                        alt=""
-                        width="171"
-                        height="70"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="
-                            /images/accreditations/investing-in-future-growth.webp
-                        "
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="
-                            /images/accreditations/investing-in-future-growth.jpg
-                        "
-                        type="image/jpg"
-                    />
-                    <img
-                        src="/images/accreditations/investing-in-future-growth.jpg"
-                        alt=""
-                        width="175"
-                        height="58"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="
-                            /images/accreditations/norfolk-carbon-charter.webp
-                        "
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="
-                            /images/accreditations/norfolk-carbon-charter.jpg
-                        "
-                        type="image/jpg"
-                    />
-                    <img
-                        src="/images/accreditations/norfolk-carbon-charter.jpg"
-                        alt=""
-                        width="173"
-                        height="70"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="/images/accreditations/PPC_logo.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="/images/accreditations/PPC_logo.jpg"
-                        type="image/jpg"
-                    />
-                    <img
-                        src="/images/accreditations/PPC_logo.jpg"
-                        alt=""
-                        width="174"
-                        height="70"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="
-                            /images/accreditations/princess-royal-training.webp
-                        "
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="
-                            /images/accreditations/princess-royal-training.jpg
-                        "
-                        type="image/jpg"
-                    />
-                    <img
-                        src="/images/accreditations/princess-royal-training.jpg"
-                        alt=""
-                        width="175"
-                        height="44"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="/images/accreditations/future-50.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="/images/accreditations/future-50.jpg"
-                        type="image/jpg"
-                    />
-                    <img
-                        src="/images/accreditations/future-50.jpg"
-                        alt=""
-                        width="44"
-                        height="70"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="/images/accreditations/qms.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="/images/accreditations/qms.jpg"
-                        type="image/jpg"
-                    />
-                    <img
-                        src="/images/accreditations/qms.jpg"
-                        alt=""
-                        width="140"
-                        height="70"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="/images/accreditations/iso_27001.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="/images/accreditations/iso_27001.jpg"
-                        type="image/jpg"
-                    />
-                    <img
-                        src="/images/accreditations/iso_27001.jpg"
-                        alt=""
-                        width="140"
-                        height="70"
-                    />
-                </picture>
-                <picture>
-                    <source
-                        srcset="/images/accreditations/skills-of-tomorrow.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        srcset="/images/accreditations/skills-of-tomorrow.jpg"
-                        type="image/jpg"
-                    />
-                    <img
-                        src="/images/accreditations/skills-of-tomorrow.jpg"
-                        alt=""
-                        width="175"
-                        height="58"
-                    />
-                </picture>
-            </div>
+            <section
+                id="carousel-accreditations"
+                class="splide carousel"
+                aria-label="Accreditations"
+            >
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/google-partner.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        /images/accreditations/google-partner.jpg
+                                    "
+                                    type="image/jpg"
+                                />
+                                <img
+                                    src="/images/accreditations/google-partner.jpg"
+                                    alt=""
+                                    width="169"
+                                    height="70"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/living_wage.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        /images/accreditations/living_wage.png
+                                    "
+                                    type="image/png"
+                                />
+                                <img
+                                    src="/images/accreditations/living_wage.png"
+                                    alt=""
+                                    width="88"
+                                    height="70"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/norfolk_prohelp.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        /images/accreditations/norfolk_prohelp.png
+                                    "
+                                    type="image/png"
+                                />
+                                <img
+                                    src="/images/accreditations/norfolk_prohelp.png"
+                                    alt=""
+                                    width="171"
+                                    height="70"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/investing-in-future-growth.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        /images/accreditations/investing-in-future-growth.jpg
+                                    "
+                                    type="image/jpg"
+                                />
+                                <img
+                                    src="/images/accreditations/investing-in-future-growth.jpg"
+                                    alt=""
+                                    width="175"
+                                    height="58"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/norfolk-carbon-charter.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        /images/accreditations/norfolk-carbon-charter.jpg
+                                    "
+                                    type="image/jpg"
+                                />
+                                <img
+                                    src="/images/accreditations/norfolk-carbon-charter.jpg"
+                                    alt=""
+                                    width="173"
+                                    height="70"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/PPC_logo.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="/images/accreditations/PPC_logo.jpg"
+                                    type="image/jpg"
+                                />
+                                <img
+                                    src="/images/accreditations/PPC_logo.jpg"
+                                    alt=""
+                                    width="174"
+                                    height="70"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/princess-royal-training.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        /images/accreditations/princess-royal-training.jpg
+                                    "
+                                    type="image/jpg"
+                                />
+                                <img
+                                    src="/images/accreditations/princess-royal-training.jpg"
+                                    alt=""
+                                    width="175"
+                                    height="44"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/future-50.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        /images/accreditations/future-50.jpg
+                                    "
+                                    type="image/jpg"
+                                />
+                                <img
+                                    src="/images/accreditations/future-50.jpg"
+                                    alt=""
+                                    width="44"
+                                    height="70"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="/images/accreditations/qms.webp"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="/images/accreditations/qms.jpg"
+                                    type="image/jpg"
+                                />
+                                <img
+                                    src="/images/accreditations/qms.jpg"
+                                    alt=""
+                                    width="140"
+                                    height="70"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/iso_27001.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        /images/accreditations/iso_27001.jpg
+                                    "
+                                    type="image/jpg"
+                                />
+                                <img
+                                    src="/images/accreditations/iso_27001.jpg"
+                                    alt=""
+                                    width="140"
+                                    height="70"
+                                />
+                            </picture>
+                        </li>
+                        <li class="splide__slide">
+                            <picture>
+                                <source
+                                    srcset="
+                                        /images/accreditations/skills-of-tomorrow.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        /images/accreditations/skills-of-tomorrow.jpg
+                                    "
+                                    type="image/jpg"
+                                />
+                                <img
+                                    src="/images/accreditations/skills-of-tomorrow.jpg"
+                                    alt=""
+                                    width="175"
+                                    height="58"
+                                />
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
             <!-- About us -->
             <div class="about-us">
@@ -1544,386 +1604,461 @@
             </div>
 
             <!-- Clients -->
-            <div class="carousel-clients">
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="/images/clients/black_swan_logo.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/black_swan_logo.png"
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/black_swan_logo.png"
-                            alt=""
-                            width="122"
-                            height="107"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Black Swan Care Group</h3>
-                        <p>
-                            Black Swan Care Group own and manage 21 high-quality
-                            care and residential homes with a focus on putting
-                            the needs of their residents first.
-                        </p>
-                        <a href="#" class="btn btn--silver">
-                            View Our Case Study
-                            <span class="icon icon-arrow-right"></span>
-                        </a>
-                        <div class="arrow-down"></div>
-                    </div>
+            <section
+                id="carousel-clients"
+                class="splide carousel-clients"
+                aria-label="Clients"
+            >
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/black_swan_logo.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/black_swan_logo.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/black_swan_logo.png"
+                                        alt=""
+                                        width="122"
+                                        height="107"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Black Swan Care Group</h3>
+                                    <p>
+                                        Black Swan Care Group own and manage 21
+                                        high-quality care and residential homes
+                                        with a focus on putting the needs of
+                                        their residents first.
+                                    </p>
+                                    <a href="#" class="btn btn--silver">
+                                        View Our Case Study
+                                        <span
+                                            class="icon icon-arrow-right"
+                                        ></span>
+                                    </a>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="/images/clients/xupes_logo.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="/images/clients/xupes_logo.png"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/xupes_logo.png"
+                                        alt=""
+                                        width="200"
+                                        height="38"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Xupes</h3>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="/images/clients/beat_logo.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="/images/clients/beat_logo.png"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/beat_logo.png"
+                                        alt=""
+                                        width="72"
+                                        height="70"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>BEAT</h3>
+                                    <p>
+                                        The UK's eating disorder charity founded
+                                        in 1989.
+                                    </p>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/survey_solutions_logo.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/survey_solutions_logo.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/survey_solutions_logo.png"
+                                        alt=""
+                                        width="328"
+                                        height="79"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Survey Solutions</h3>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/girl_guides_anglia_logo.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/girl_guides_anglia_logo.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/girl_guides_anglia_logo.png"
+                                        alt=""
+                                        width="200"
+                                        height="118"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Girl Guiding Anglia</h3>
+                                    <p>
+                                        Girl Guiding Anglia is part of
+                                        Girlguiding, the UK's leading charity
+                                        for girls and young women in the UK.
+                                    </p>
+                                    <a href="#" class="btn btn--blue">
+                                        View Our Case Study
+                                        <span
+                                            class="icon icon-arrow-right"
+                                        ></span>
+                                    </a>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/sweetzy_logo.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/sweetzy_logo.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/sweetzy_logo.png"
+                                        alt=""
+                                        width="200"
+                                        height="58"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Sweetzy</h3>
+                                    <p>
+                                        Sweetzy are an online sweets retailer,
+                                        based in Wymondham
+                                    </p>
+                                    <a href="#" class="btn btn--green">
+                                        View Our Case Study
+                                        <span
+                                            class="icon icon-arrow-right"
+                                        ></span>
+                                    </a>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/howespercivallogo.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/howespercivallogo.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/howespercivallogo.png"
+                                        alt=""
+                                        width="200"
+                                        height="61"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Howes Percival</h3>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/girls_day_school_trust_logob.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/girls_day_school_trust_logob.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/girls_day_school_trust_logob.png"
+                                        alt=""
+                                        width="200"
+                                        height="61"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>GDST</h3>
+                                    <p>
+                                        The Girls' Day School Trust (GDST) is
+                                        the UK's leading family of 25
+                                        independent girls' schools.
+                                    </p>
+                                    <a href="#" class="btn btn--green">
+                                        View Our Case Study
+                                        <span
+                                            class="icon icon-arrow-right"
+                                        ></span>
+                                    </a>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png"
+                                        alt=""
+                                        width="200"
+                                        height="42"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Ashcroft Partnership LLP</h3>
+                                    <p>
+                                        Originally founded in 2006 as Ashcroft
+                                        Anthony, they became Ashcroft
+                                        Partnership LLP in 2020 and are one of
+                                        the top chartered accountancy firms in
+                                        Cambridge, advising entrepreneurs and
+                                        families.
+                                    </p>
+                                    <a href="#" class="btn btn--purple">
+                                        View Our Case Study
+                                        <span
+                                            class="icon icon-arrow-right"
+                                        ></span>
+                                    </a>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/onetravellerlogo_white_figuire.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/onetravellerlogo_white_figuire.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/onetravellerlogo_white_figuire.png"
+                                        alt=""
+                                        width="43"
+                                        height="75"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>One Traveller</h3>
+                                    <p>
+                                        One Traveller, founded in 2007, is a
+                                        leading provider of solo holidays for
+                                        over 50s.
+                                    </p>
+                                    <a href="#" class="btn btn--purple">
+                                        View Our Case Study
+                                        <span
+                                            class="icon icon-arrow-right"
+                                        ></span>
+                                    </a>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/searles_logo.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/searles_logo.jpg
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <img
+                                        src="/images/clients/searles_logo.jpg"
+                                        alt=""
+                                        width="200"
+                                        height="78"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Searles Leisure Resort</h3>
+                                    <p>
+                                        Searles Leisure Resort, on the beautiful
+                                        North Norfolk coast, is an award-winning
+                                        UK holiday resort for families.
+                                    </p>
+                                    <a href="#" class="btn btn--green">
+                                        View Our Case Study
+                                        <span
+                                            class="icon icon-arrow-right"
+                                        ></span>
+                                    </a>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            /images/clients/busseys_logo.webp
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            /images/clients/busseys_logo.png
+                                        "
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/busseys_logo.png"
+                                        alt=""
+                                        width="188"
+                                        height="70"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Busseys</h3>
+                                    <p>
+                                        One of the UK's leading Ford
+                                        dealerships.
+                                    </p>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel-clients__image-container">
+                                <picture>
+                                    <source
+                                        srcset="/images/clients/crane_logo.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="/images/clients/crane_logo.png"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="/images/clients/crane_logo.png"
+                                        alt=""
+                                        width="287"
+                                        height="70"
+                                    />
+                                </picture>
+                                <div class="carousel-clients__tooltip">
+                                    <h3>Crane Garden Buildings</h3>
+                                    <p>
+                                        Leading manufacturer and supplier of
+                                        high-end garden rooms, summerhouses,
+                                        workshops and sheds in the UK.
+                                    </p>
+                                    <div class="arrow-down"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="/images/clients/xupes_logo.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/xupes_logo.png"
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/xupes_logo.png"
-                            alt=""
-                            width="200"
-                            height="38"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Xupes</h3>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="/images/clients/beat_logo.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/beat_logo.png"
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/beat_logo.png"
-                            alt=""
-                            width="72"
-                            height="70"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>BEAT</h3>
-                        <p>The UK's eating disorder charity founded in 1989.</p>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="/images/clients/survey_solutions_logo.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/survey_solutions_logo.png"
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/survey_solutions_logo.png"
-                            alt=""
-                            width="328"
-                            height="79"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Survey Solutions</h3>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="
-                                /images/clients/girl_guides_anglia_logo.webp
-                            "
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/girl_guides_anglia_logo.png"
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/girl_guides_anglia_logo.png"
-                            alt=""
-                            width="200"
-                            height="118"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Girl Guiding Anglia</h3>
-                        <p>
-                            Girl Guiding Anglia is part of Girlguiding, the UK's
-                            leading charity for girls and young women in the UK.
-                        </p>
-                        <a href="#" class="btn btn--blue">
-                            View Our Case Study
-                            <span class="icon icon-arrow-right"></span>
-                        </a>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="/images/clients/sweetzy_logo.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/sweetzy_logo.png"
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/sweetzy_logo.png"
-                            alt=""
-                            width="200"
-                            height="58"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Sweetzy</h3>
-                        <p>
-                            Sweetzy are an online sweets retailer, based in
-                            Wymondham
-                        </p>
-                        <a href="#" class="btn btn--green">
-                            View Our Case Study
-                            <span class="icon icon-arrow-right"></span>
-                        </a>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="/images/clients/howespercivallogo.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/howespercivallogo.png"
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/howespercivallogo.png"
-                            alt=""
-                            width="200"
-                            height="61"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Howes Percival</h3>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="
-                                /images/clients/girls_day_school_trust_logob.webp
-                            "
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="
-                                /images/clients/girls_day_school_trust_logob.png
-                            "
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/girls_day_school_trust_logob.png"
-                            alt=""
-                            width="200"
-                            height="61"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>GDST</h3>
-                        <p>
-                            The Girls' Day School Trust (GDST) is the UK's
-                            leading family of 25 independent girls' schools.
-                        </p>
-                        <a href="#" class="btn btn--green">
-                            View Our Case Study
-                            <span class="icon icon-arrow-right"></span>
-                        </a>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="
-                                /images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.webp
-                            "
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="
-                                /images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png
-                            "
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png"
-                            alt=""
-                            width="200"
-                            height="42"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Ashcroft Partnership LLP</h3>
-                        <p>
-                            Originally founded in 2006 as Ashcroft Anthony, they
-                            became Ashcroft Partnership LLP in 2020 and are one
-                            of the top chartered accountancy firms in Cambridge,
-                            advising entrepreneurs and families.
-                        </p>
-                        <a href="#" class="btn btn--purple">
-                            View Our Case Study
-                            <span class="icon icon-arrow-right"></span>
-                        </a>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="
-                                /images/clients/onetravellerlogo_white_figuire.webp
-                            "
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="
-                                /images/clients/onetravellerlogo_white_figuire.png
-                            "
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/onetravellerlogo_white_figuire.png"
-                            alt=""
-                            width="43"
-                            height="75"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>One Traveller</h3>
-                        <p>
-                            One Traveller, founded in 2007, is a leading
-                            provider of solo holidays for over 50s.
-                        </p>
-                        <a href="#" class="btn btn--purple">
-                            View Our Case Study
-                            <span class="icon icon-arrow-right"></span>
-                        </a>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="/images/clients/searles_logo.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/searles_logo.jpg"
-                            type="image/jpg"
-                        />
-                        <img
-                            src="/images/clients/searles_logo.jpg"
-                            alt=""
-                            width="200"
-                            height="78"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Searles Leisure Resort</h3>
-                        <p>
-                            Searles Leisure Resort, on the beautiful North
-                            Norfolk coast, is an award-winning UK holiday resort
-                            for families.
-                        </p>
-                        <a href="#" class="btn btn--green">
-                            View Our Case Study
-                            <span class="icon icon-arrow-right"></span>
-                        </a>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="/images/clients/busseys_logo.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/busseys_logo.png"
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/busseys_logo.png"
-                            alt=""
-                            width="188"
-                            height="70"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Busseys</h3>
-                        <p>One of the UK's leading Ford dealerships.</p>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-
-                <div class="carousel-clients__image-container">
-                    <picture>
-                        <source
-                            srcset="/images/clients/crane_logo.webp"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="/images/clients/crane_logo.png"
-                            type="image/png"
-                        />
-                        <img
-                            src="/images/clients/crane_logo.png"
-                            alt=""
-                            width="287"
-                            height="70"
-                        />
-                    </picture>
-                    <div class="carousel-clients__tooltip">
-                        <h3>Crane Garden Buildings</h3>
-                        <p>
-                            Leading manufacturer and supplier of high-end garden
-                            rooms, summerhouses, workshops and sheds in the UK.
-                        </p>
-                        <div class="arrow-down"></div>
-                    </div>
-                </div>
-            </div>
+            </section>
 
             <!-- Newsletter signup -->
             <div class="newsletter-signup">
