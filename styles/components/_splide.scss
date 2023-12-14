@@ -1,7 +1,6 @@
 @use '../abstracts/' as *;
 
 // Override Splide (Carousel library) styles
-
 .splide {
     z-index: $zi-splide;
 
@@ -10,11 +9,12 @@
     }
 
     &__pagination {
-        bottom: 44px !important;
+        bottom: 24.5px !important;
+
         gap: 20px;
 
-        @media screen and (max-width: 500px) {
-            bottom: 20px !important;
+        @media screen and (min-width: 450px) {
+            bottom: 44px !important;
         }
 
         &__page {
