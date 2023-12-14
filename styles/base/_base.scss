@@ -2,6 +2,11 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     letter-spacing: 0.4px;
+}
+
+// This is used as could not find a way to have the clients section hide
+// x-overflow and also have the on hover absolute elements show
+.site-wrapper {
     overflow-x: hidden;
 }
 
