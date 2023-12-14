@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 // Override Splide (Carousel library) styles
+
 .splide {
     z-index: $zi-splide;
 
@@ -40,4 +41,8 @@
             }
         }
     }
+}
+
+#carousel-hero {
+    cursor: grab;
 }

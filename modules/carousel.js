@@ -4,7 +4,7 @@ import Splide from '@splidejs/splide';
 
 export const carousels = {
     init() {
-        new Splide('#carousel-hero', {
+        const carouselHero = new Splide('#carousel-hero', {
             type: 'loop',
             arrows: false,
             autoplay: true,
@@ -34,5 +34,13 @@ export const carousels = {
             interval: 3000,
             gap: '90px',
         }).mount();
+
+        carouselHero.on('drag', function () {
+            carouselHero.root.style.cursor = 'grabbing';
+        });
+
+        carouselHero.on('dragged', function () {
+            carouselHero.root.style.cursor = 'grab';
+        });
     },
 };
