@@ -2,13 +2,31 @@
 
 .header {
     $spacing: toRem(20);
+    background-color: $white;
 
-    margin: 0 auto;
-    padding: $spacing 1rem;
+    position: sticky;
+    top: -100%;
+    z-index: 999;
 
-    display: flex;
-    flex-direction: column;
-    gap: toRem(20);
+    transition: top 500ms ease-in-out;
+
+    &.sticky {
+        top: 0;
+        box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    &__inner {
+        margin: 0 auto;
+        padding: $spacing 1rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: toRem(20);
+
+        .icon-phone_in_talk {
+            font-size: toRem(32);
+        }
+    }
 
     &__logo {
         @include mq(lg) {
@@ -30,9 +48,5 @@
         gap: $spacing;
 
         flex: 1;
-    }
-
-    .icon-phone_in_talk {
-        font-size: toRem(32);
     }
 }
