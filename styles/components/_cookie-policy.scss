@@ -1,0 +1,82 @@
+@use '../abstracts' as *;
+
+body.modal-active {
+    overflow: hidden;
+}
+
+.modal {
+    /* Positioning */
+    position: fixed;
+    inset: 0;
+    z-index: $zi-cookie-policy;
+
+    /* Display & Box Model */
+    padding: 30px;
+    display: none;
+    place-items: center;
+
+    /* Other */
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+
+    body.modal-active & {
+        display: grid;
+    }
+
+    &__content {
+        max-width: 600px;
+
+        background: $white;
+        border-radius: 5px;
+
+        > * {
+            padding: 20px;
+        }
+    }
+
+    &__header {
+        letter-spacing: 0.4px;
+        font-weight: 400;
+        color: #333645;
+        font-size: 1.625rem;
+        line-height: 1.42857143;
+
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    &__body {
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+        color: #666;
+        line-height: 1.875rem;
+
+        border-bottom: 1px solid #e5e5e5;
+
+        padding-bottom: 45px;
+
+        a {
+            color: #333645;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include mq(md) {
+            flex-direction: row;
+        }
+
+        .btn {
+            line-height: 35px;
+            font-size: 1.063rem;
+
+            flex: 1;
+        }
+    }
+}

@@ -1,8 +1,10 @@
 import 'normalize.css';
 import './styles/styles.scss';
 
-import { carousels } from './modules/carousel';
+import Carousels from './modules/carousel';
 import StickyHeader from './modules/sticky-header';
+import CookiePolicy from './modules/cookie-policy.js';
 
-carousels.init();
+Carousels.init();
 StickyHeader.init('sticky');
+CookiePolicy.init();
