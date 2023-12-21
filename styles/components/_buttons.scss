@@ -5,11 +5,13 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     padding: 0.5rem 1rem;
     gap: 0.5rem;
+
     border-radius: 3px;
 
+    color: $white;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -22,10 +24,7 @@
 %btn-cta {
     @extend %btn-base;
 
-    color: $white;
-
     font-size: toRem(18);
-    text-transform: uppercase;
 }
 
 .btn {
@@ -61,10 +60,6 @@
     height: 56px;
     padding: 0;
 
-    background-color: getColour(slate, 700);
-    color: white;
-
-    &:hover,
     &:focus-visible {
         background-color: getColour(slate, 800);
     }
@@ -78,6 +73,8 @@
 
 .btn-search-mobile {
     @extend %btn-square;
+
+    color: getColour(slate, 700);
     border-radius: 0;
 }
 
@@ -87,14 +84,7 @@
     width: 55px;
     flex-shrink: 0;
 
-    background-color: getColour(gray, 400);
-    color: white;
-
     border-radius: 0 3px 3px 0;
-
-    &:hover {
-        background-color: getColour(gray, 500);
-    }
 
     @include mq(lg) {
         border-radius: inherit;
@@ -113,38 +103,6 @@
 
     @include mq(lg) {
         display: flex;
-    }
-}
-
-.btn-support {
-    background-color: getColour(blue, 400);
-
-    &:hover {
-        background-color: getColour(blue, 500);
-    }
-}
-
-.btn-contact {
-    background-color: getColour(gray, 400);
-
-    &:hover {
-        background-color: getColour(gray, 500);
-    }
-}
-
-.btn-google {
-    background-color: getColour(blue, 400);
-
-    &:hover {
-        background-color: getColour(blue, 500);
-    }
-}
-
-.btn-trustpilot {
-    background-color: getColour(green, 400);
-
-    &:hover {
-        background-color: getColour(green, 500);
     }
 }
 
