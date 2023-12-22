@@ -1,0 +1,133 @@
+@use '../abstracts' as *;
+
+$mobile-menu-width: 275px;
+$mobile-menu-width-lg: 350px;
+
+body.mobile-menu-active {
+    overflow-y: hidden;
+
+    .site-wrapper-overlay {
+        opacity: 1;
+        cursor: pointer;
+        z-index: $zi-site-wrapper-overlay;
+        width: 100%;
+        height: 100%;
+    }
+
+    .site-wrapper {
+        left: -$mobile-menu-width;
+
+        @include mq(lg) {
+            left: -$mobile-menu-width-lg;
+        }
+    }
+}
+
+.site-wrapper {
+    position: relative;
+    left: 0;
+    z-index: $zi-site-wrapper;
+
+    transition: left 500ms ease-in-out;
+}
+
+.site-wrapper-overlay {
+    position: absolute;
+    inset: 0;
+
+    width: 0;
+    height: 0;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mobile-menu {
+    /* Positioning */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $zi-mobile-menu;
+    height: 100%;
+    width: $mobile-menu-width;
+
+    @include mq(lg) {
+        width: $mobile-menu-width-lg;
+    }
+
+    /* Other */
+    background-color: getColour(slate, 700);
+    color: $white;
+    overflow-y: auto;
+    text-transform: uppercase;
+
+    &__bottom {
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+    }
+
+    &__small {
+        font-size: 0.625rem;
+    }
+
+    [class^='icon-'],
+    [class*=' icon-'] {
+        margin-bottom: 3px;
+    }
+}
+
+.mobile-menu__item {
+    &:hover > a {
+        background-color: hsla(0, 0%, 100%, 0.05);
+    }
+
+    & > a {
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+
+    ul li {
+        border-top: 1px solid rgba(0, 0, 0, 0.45);
+
+        a {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+        }
+    }
+
+    &--icon {
+        margin: 1.25rem 0;
+        padding: 0 1.25rem;
+
+        text-align: center;
+
+        & > a {
+            font-size: 1.125rem;
+            border: 1px solid hsla(0, 0%, 100%, 0.1);
+            outline: 1px solid rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            margin-bottom: 1.25rem;
+        }
+
+        ul li a {
+            padding: 10px;
+        }
+    }
+    &:not(&--icon) {
+        border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+        ul li a {
+            font-size: 14px;
+            padding: 15px 20px;
+
+            &::before {
+                content: '\BB';
+                margin-right: 1rem;
+            }
+        }
+    }
+}

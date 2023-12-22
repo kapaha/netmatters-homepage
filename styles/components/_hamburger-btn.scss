@@ -1,0 +1,120 @@
+@use 'sass:math';
+@use '../abstracts' as *;
+
+// Hamburger Settings
+// ==================================================
+
+$hamburger-padding-x: 15px !default;
+$hamburger-padding-y: 15px !default;
+$hamburger-layer-width: 34px !default;
+$hamburger-layer-height: 4px !default;
+$hamburger-layer-spacing: 6px !default;
+$hamburger-layer-color: $white !default;
+$hamburger-layer-border-radius: 0px !default;
+
+body.mobile-menu-active {
+    .hamburger--collapse {
+        .hamburger-inner {
+            transform: translate3d(
+                    0,
+                    ($hamburger-layer-spacing + $hamburger-layer-height) * -1,
+                    0
+                )
+                rotate(-45deg);
+            transition-delay: 0.22s;
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+            &::after {
+                top: 0;
+                opacity: 0;
+                transition:
+                    top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+                    opacity 0.1s 0.22s linear;
+            }
+
+            &::before {
+                top: 0;
+                transform: rotate(-90deg);
+                transition:
+                    top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+                    transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+        }
+    }
+}
+
+// Hamburger
+// ==================================================
+.hamburger {
+    flex-shrink: 0;
+    padding: $hamburger-padding-y $hamburger-padding-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.hamburger-box {
+    width: $hamburger-layer-width;
+    height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
+    display: block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: math.div($hamburger-layer-height, -2);
+
+    &,
+    &::before,
+    &::after {
+        width: $hamburger-layer-width;
+        height: $hamburger-layer-height;
+        background-color: $hamburger-layer-color;
+        border-radius: $hamburger-layer-border-radius;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+    }
+
+    &::before {
+        top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+    }
+
+    &::after {
+        bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+    }
+}
+
+.hamburger--collapse {
+    .hamburger-inner {
+        top: auto;
+        bottom: 0;
+        transition-duration: 0.13s;
+        transition-delay: 0.13s;
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+        &::after {
+            top: ($hamburger-layer-spacing * 2 + $hamburger-layer-height * 2) *
+                -1;
+            transition:
+                top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+                opacity 0.1s linear;
+        }
+
+        &::before {
+            transition:
+                top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+                transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+    }
+}

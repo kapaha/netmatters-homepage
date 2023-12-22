@@ -1,0 +1,11 @@
+// @use 'sass:map';
+@use '../abstracts' as *;
+
+// Generate text colors from the colours map
+@each $colour, $shades in $colors {
+    @each $shade, $value in $shades {
+        .text-#{$colour}-#{$shade} {
+            color: $value;
+        }
+    }
+}

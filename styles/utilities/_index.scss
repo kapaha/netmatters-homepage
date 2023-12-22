@@ -1,4 +1,5 @@
 @forward 'grid';
+@forward 'text';
 
 @use '../abstracts/' as *;
 
@@ -35,4 +36,25 @@
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+@each $breakpoint, $value in $breakpoints {
+    .#{$breakpoint}\:hidden {
+        @include mq(#{$breakpoint}) {
+            display: none;
+        }
+    }
+    .#{$breakpoint}\:block {
+        @include mq(#{$breakpoint}) {
+            display: block;
+        }
+    }
 }

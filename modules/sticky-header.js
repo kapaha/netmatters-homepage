@@ -1,3 +1,5 @@
+import { Logger } from 'sass';
+
 const Scroll = (() => {
     const DIRECTION = {
         UP: 'UP',
@@ -30,12 +32,42 @@ const Scroll = (() => {
 
 const Header = (() => {
     const element = document.querySelector('header');
+    let fixedElement = null;
 
-    const updateTopPosition = (
-        stickyHeaderClass,
-        scrollPositionY,
-        scrollDirection,
-    ) => {
+    const onScrollUp = () => {
+        if (fixedElement) return;
+
+        fixedElement = element.cloneNode(true);
+        fixedElement.classList.add('fixed', 'slideDown');
+
+        element.style.visibility = 'hidden';
+        element.parentElement.appendChild(fixedElement);
+    };
+
+    const onScollDown = () => {
+        if (!fixedElement) return;
+
+        fixedElement.classList.remove('slideDown');
+        fixedElement.classList.add('slideUp');
+
+        element.style.visibility = '';
+
+        setTimeout(() => {
+            fixedElement.remove();
+            fixedElement = null;
+        }, 250);
+    };
+
+    const onScrolledToTop = () => {
+        if (!fixedElement) return;
+
+        fixedElement.remove();
+        fixedElement = null;
+
+        element.style.visibility = '';
+    };
+
+    const update = (scrollPositionY, scrollDirection) => {
         if (!element) {
             console.error('Header element not found.');
             return;
@@ -43,8 +75,13 @@ const Header = (() => {
 
         const scrolledToTop = scrollPositionY === 0;
 
-        if (scrolledToTop || scrollDirection === 'DOWN') {
-            element.classList.remove(stickyHeaderClass);
+        if (scrolledToTop) {
+            onScrolledToTop();
+            return;
+        }
+
+        if (scrollDirection === 'DOWN') {
+            onScollDown();
             return;
         }
 
@@ -52,12 +89,12 @@ const Header = (() => {
             scrollPositionY < element.getBoundingClientRect().height;
 
         if (scrollDirection === 'UP' && !headerVisible) {
-            element.classList.add(stickyHeaderClass);
+            onScrollUp();
         }
     };
 
     return {
-        updateTopPosition,
+        update,
     };
 })();
 
@@ -73,21 +110,15 @@ function debounce(callback, delay) {
     };
 }
 
-function handleScroll(stickyHeaderClass) {
+function handleScroll() {
     Scroll.update();
-    Header.updateTopPosition(
-        stickyHeaderClass,
-        Scroll.getPositionY(),
-        Scroll.getDirection(),
-    );
+    Header.update(Scroll.getPositionY(), Scroll.getDirection());
 }
 
 const debouncedHandleScroll = debounce(handleScroll, 100);
 
 export default {
-    init(stickyHeaderClass) {
-        window.addEventListener('scroll', () =>
-            debouncedHandleScroll(stickyHeaderClass),
-        );
+    init() {
+        window.addEventListener('scroll', () => debouncedHandleScroll());
     },
 };

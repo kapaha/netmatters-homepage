@@ -4,15 +4,40 @@
     $spacing: toRem(20);
     background-color: $white;
 
-    position: sticky;
-    top: -100%;
-    z-index: $zi-header;
-
-    transition: top 500ms ease-in-out;
-
-    &.sticky {
+    &.fixed {
+        position: fixed;
         top: 0;
+        width: 100%;
+        z-index: $zi-header;
         box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+
+        &.slideDown {
+            animation: slideDown 0.25s;
+            transform: translateY(0);
+
+            @keyframes slideDown {
+                0% {
+                    transform: translateY(-100%);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        &.slideUp {
+            animation: slideUp 0.25s;
+            transform: translateY(-100%);
+
+            @keyframes slideUp {
+                0% {
+                    transform: translateY(0);
+                }
+                100% {
+                    transform: translateY(-100%);
+                }
+            }
+        }
     }
 
     &__inner {

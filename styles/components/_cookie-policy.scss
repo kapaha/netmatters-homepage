@@ -17,7 +17,7 @@ body.modal-active {
 
     /* Other */
     background-color: rgba(0, 0, 0, 0.7);
-    overflow: auto;
+    overflow-y: auto;
 
     body.modal-active & {
         display: grid;

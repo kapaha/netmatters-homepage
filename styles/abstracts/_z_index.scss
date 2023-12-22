@@ -1,7 +1,11 @@
 // z index values grouped if they affect each other
 
+$zi-site-wrapper: 2;
+$zi-site-wrapper-overlay: 999;
+$zi-mobile-menu: $zi-site-wrapper - 1;
+
 $zi-header: 101;
-$zi-main-nav-sub-menu: 1;
+$zi-main-nav-sub-menu: $zi-site-wrapper + 1;
 $zi-main-nav-triangle: $zi-main-nav-sub-menu + 1;
 
 $zi-hero-content: 1;

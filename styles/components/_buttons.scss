@@ -49,26 +49,8 @@
 }
 
 .btn-hamburger {
-    @extend %btn-square;
-
-    flex-shrink: 0;
-    align-self: center;
-
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 63px;
-    height: 56px;
-    padding: 0;
-
     &:focus-visible {
         background-color: getColour(slate, 800);
-    }
-
-    span {
-        background-color: white;
-        width: 33px;
-        height: 4px;
     }
 }
 
