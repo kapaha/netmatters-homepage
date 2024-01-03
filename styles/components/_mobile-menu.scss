@@ -21,6 +21,16 @@ body.mobile-menu-active {
             left: -$mobile-menu-width-lg;
         }
     }
+
+    .header.fixed {
+        left: -$mobile-menu-width;
+        right: $mobile-menu-width;
+
+        @include mq(lg) {
+            left: -$mobile-menu-width-lg;
+            right: $mobile-menu-width-lg;
+        }
+    }
 }
 
 .site-wrapper {
