@@ -31,6 +31,10 @@ body.mobile-menu-active {
             right: $mobile-menu-width-lg;
         }
     }
+
+    .mobile-menu {
+        overflow-y: auto;
+    }
 }
 
 .site-wrapper {
@@ -69,7 +73,6 @@ body.mobile-menu-active {
     /* Other */
     background-color: getColour(slate, 700);
     color: $white;
-    overflow-y: auto;
     text-transform: uppercase;
 
     &__bottom {
